@@ -117,6 +117,7 @@ public class WeatherApp extends Application {
     private TextField locField;
     private Button locButton;
     private Button favButton;
+    private Button unitButton;
     private ComboBox<String> langBox;
     private boolean isMapShown;
     private boolean isForecastShown;
@@ -1212,6 +1213,16 @@ public class WeatherApp extends Application {
             e.printStackTrace();
         }
 
+        // Save last units of measurement
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter("last_units.txt"))) {
+            writer.write(unit);
+            writer.close();
+        }
+
+        catch (IOException e) {
+            e.printStackTrace();
+        }
+
     }
 
     private void loadFavourites() {
@@ -1254,7 +1265,25 @@ public class WeatherApp extends Application {
 
             city_loc = reader.readLine();
 
-            search();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        try (BufferedReader reader = new BufferedReader(new FileReader("last_units.txt"))) {
+
+            unit = reader.readLine();
+
+            if(unit.equals("metric")){
+                unit = "imperial";
+            }
+
+            else if(unit.equals("imperial")){
+                unit = "metric";
+            }
+
+            if (unitButton != null) {
+                unitButton.fire();
+            }
 
         } catch (IOException e) {
             e.printStackTrace();
@@ -1288,15 +1317,15 @@ public class WeatherApp extends Application {
     }
 
     public Button getUnitToggleButton() {
-        Button unitButton = new Button("Metric");
+        unitButton = new Button("Metric");
 
         unitButton.setOnAction((ActionEvent event) -> {
-            if (unitButton.getText() == "Imperial") {
+            if (unit.equals("imperial")) {
                 unitButton.setText("Metric");
                 unit = "metric";
             }
 
-            else if (unitButton.getText() == "Metric") {
+            else if (unit.equals("metric")) {
                 unitButton.setText("Imperial");
                 unit = "imperial";
             }
