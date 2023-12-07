@@ -1136,12 +1136,12 @@ public class WeatherApp extends Application {
 
             switch (unit) {
                 case "metric":
-                    windSpeed = String.format("༄ %.1f", windDouble) + " m/s";
+                    windSpeed = String.format("🚩 %.1f", windDouble) + " m/s";
 
                     break;
 
                 case "imperial":
-                    windSpeed = String.format("༄ %.1f", windDouble) + " mph";
+                    windSpeed = String.format("🚩 %.1f", windDouble) + " mph";
 
                     break;
             }
