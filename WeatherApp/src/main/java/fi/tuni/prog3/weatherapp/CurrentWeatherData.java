@@ -115,7 +115,6 @@ public class CurrentWeatherData{
 
     public static class Wind {
         public double speed;
-        public int deg;
 
         // Getter and Setter methods...
         public double getSpeed() {
@@ -124,14 +123,6 @@ public class CurrentWeatherData{
 
         public void setSpeed(double speed) {
             this.speed = speed;
-        }
-        
-        public int getDeg() {
-            return deg;
-        }
-
-        public void setDeg(int deg) {
-            this.deg = deg;
         }
 
     }
