@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="150cm" height="125cm" viewBox="-469 -1667 2983 2499" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <rect style="fill: #ffffff" x="-251.147" y="84.1157" width="318" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-251.147" y="84.1157" width="318" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="-92.1471" y="104.116">CurrentWeatherData</text>
+    <rect style="fill: #ffffff" x="-251.147" y="112.116" width="318" height="84"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-251.147" y="112.116" width="318" height="84"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-248.147" y="125.316">+weather: List&lt;weather&gt;</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-248.147" y="141.316">+main: Main</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-248.147" y="157.316">+visibility: int</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-248.147" y="173.316">+wind: Wind</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-248.147" y="189.316">+name: String</text>
+    <rect style="fill: #ffffff" x="-251.147" y="196.116" width="318" height="164"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-251.147" y="196.116" width="318" height="164"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-248.147" y="209.316">+getWeather(): List&lt;Weather&gt;</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-248.147" y="225.316">+setWeather(weather:List&lt;Weather&gt;): void</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-248.147" y="241.316">+getMain(): Main</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-248.147" y="257.316">+setMain(main:Main): void</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-248.147" y="273.316">+getVisibility(): int</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-248.147" y="289.316">+setVisibility(visibillity:int): void</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-248.147" y="305.316">+getWind(): Wind</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-248.147" y="321.316">+setWind(wind:Wind): void</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-248.147" y="337.316">+getName(): String</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-248.147" y="353.316">+setName(name:String): void</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="544.355" y="83.7445" width="302.6" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="544.355" y="83.7445" width="302.6" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="695.655" y="103.745">DailyWeatherData</text>
+    <rect style="fill: #ffffff" x="544.355" y="111.745" width="302.6" height="84"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="544.355" y="111.745" width="302.6" height="84"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="547.355" y="124.945">+cod: String</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="547.355" y="140.945">+message: double</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="547.355" y="156.945">+cnt: int</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="547.355" y="172.945">+list: List&lt;WeatherData&gt;</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="547.355" y="188.945">+city: City</text>
+    <rect style="fill: #ffffff" x="544.355" y="195.745" width="302.6" height="164"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="544.355" y="195.745" width="302.6" height="164"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="547.355" y="208.945">+getCod(): String</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="547.355" y="224.945">+setCod(cod:String): void</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="547.355" y="240.945">+getMessage(): double</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="547.355" y="256.945">+setMessage(message:double): void</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="547.355" y="272.945">+getCnt(): int</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="547.355" y="288.945">+setCnt(cnt:int): void</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="547.355" y="304.945">+getList(): List&lt;WeatherData&gt;</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="547.355" y="320.945">+setList(list:List&lt;WeatherData&gt;): void</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="547.355" y="336.945">+getCity(): City</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="547.355" y="352.945">+setCity(city:City): void</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="1154.84" y="83.2538" width="302.6" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="1154.84" y="83.2538" width="302.6" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="1306.14" y="103.254">HourlyWeatherData</text>
+    <rect style="fill: #ffffff" x="1154.84" y="111.254" width="302.6" height="36"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="1154.84" y="111.254" width="302.6" height="36"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1157.84" y="124.454">+list: List&lt;WeatherData&gt;</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1157.84" y="140.454">+city: City</text>
+    <rect style="fill: #ffffff" x="1154.84" y="147.254" width="302.6" height="68"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="1154.84" y="147.254" width="302.6" height="68"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1157.84" y="160.454">+getList(): List&lt;WeatherData&gt;</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1157.84" y="176.454">+setList(list:List&lt;WeatherData&gt;): void</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1157.84" y="192.454">+getCity(): City</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1157.84" y="208.454">+setCity(city:City): void</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="972.33" y="387.14" width="318" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="972.33" y="387.14" width="318" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="1131.33" y="407.14">WeatherData</text>
+    <rect style="fill: #ffffff" x="972.33" y="415.14" width="318" height="68"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="972.33" y="415.14" width="318" height="68"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="975.33" y="428.34">+dt_txt: String</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="975.33" y="444.34">+main: Main</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="975.33" y="460.34">+weather: List&lt;Weather&gt;</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="975.33" y="476.34">+wind: Wind</text>
+    <rect style="fill: #ffffff" x="972.33" y="483.14" width="318" height="132"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="972.33" y="483.14" width="318" height="132"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="975.33" y="496.34">+getDt_txt(): String</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="975.33" y="512.34">+setDt_txt(dt_txt:String): void</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="975.33" y="528.34">+getMain(): Main</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="975.33" y="544.34">+setMain(main:Main): void</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="975.33" y="560.34">+getWeather(): List&lt;Weather&gt;</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="975.33" y="576.34">+setWeather(weather:List&lt;Weather&gt;): void</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="975.33" y="592.34">+getWind(): Wind</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="975.33" y="608.34">+setWind(wind:Wind): void</text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="1306.14,240.425 1306.14,256.981 1250.21,256.981 1250.21,387.14 1131.33,387.14 "/>
+    <polygon style="fill: #ffffff" points="1306.14,215.254 1310.94,229.254 1306.14,243.254 1301.34,229.254 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="1306.14,215.254 1310.94,229.254 1306.14,243.254 1301.34,229.254 "/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal" x="1278.17" y="252.981"></text>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1317.14" y="227.254"></text>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1135.33" y="383.14"></text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="928.369" y="682.731" width="256.4" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="928.369" y="682.731" width="256.4" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="1056.57" y="702.731">Main</text>
+    <rect style="fill: #ffffff" x="928.369" y="710.731" width="256.4" height="52"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="928.369" y="710.731" width="256.4" height="52"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="931.369" y="723.931">+temp: double</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="931.369" y="739.931">+humidity: int</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="931.369" y="755.931">+</text>
+    <rect style="fill: #ffffff" x="928.369" y="762.731" width="256.4" height="68"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="928.369" y="762.731" width="256.4" height="68"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="931.369" y="775.931">+getTemp(): double</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="931.369" y="791.931">+setTemp(temp:double): void</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="931.369" y="807.931">+getHumidity(): int</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="931.369" y="823.931">+setHumidity(humidity:int): void</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="1225.81" y="684.211" width="217.9" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="1225.81" y="684.211" width="217.9" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="1334.76" y="704.211">Weather</text>
+    <rect style="fill: #ffffff" x="1225.81" y="712.211" width="217.9" height="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="1225.81" y="712.211" width="217.9" height="20"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1228.81" y="725.411">+icon: String</text>
+    <rect style="fill: #ffffff" x="1225.81" y="732.211" width="217.9" height="36"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="1225.81" y="732.211" width="217.9" height="36"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1228.81" y="745.411">+getIcon(): String</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1228.81" y="761.411">+setIcon(icon:String): void</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="1484.63" y="683.524" width="233.3" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="1484.63" y="683.524" width="233.3" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="1601.28" y="703.524">Wind</text>
+    <rect style="fill: #ffffff" x="1484.63" y="711.524" width="233.3" height="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="1484.63" y="711.524" width="233.3" height="20"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1487.63" y="724.724">+speed: double</text>
+    <rect style="fill: #ffffff" x="1484.63" y="731.524" width="233.3" height="36"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="1484.63" y="731.524" width="233.3" height="36"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1487.63" y="744.724">+getSpeed(): double</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1487.63" y="760.724">+setSpeed(speed:double): void</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="1395.78" y="391.527" width="217.9" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="1395.78" y="391.527" width="217.9" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="1504.73" y="411.527">City</text>
+    <rect style="fill: #ffffff" x="1395.78" y="419.527" width="217.9" height="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="1395.78" y="419.527" width="217.9" height="20"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1398.78" y="432.727">+name: String</text>
+    <rect style="fill: #ffffff" x="1395.78" y="439.527" width="217.9" height="36"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="1395.78" y="439.527" width="217.9" height="36"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1398.78" y="452.727">+getName(): String</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1398.78" y="468.727">+setName(name:String): void</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="328.428" y="406.94" width="318" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="328.428" y="406.94" width="318" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="487.428" y="426.94">WeatherData</text>
+    <rect style="fill: #ffffff" x="328.428" y="434.94" width="318" height="52"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="328.428" y="434.94" width="318" height="52"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="331.428" y="448.14">+dt: long</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="331.428" y="464.14">+temp: Temp</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="331.428" y="480.14">+weather: List&lt;Weather&gt;</text>
+    <rect style="fill: #ffffff" x="328.428" y="486.94" width="318" height="100"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="328.428" y="486.94" width="318" height="100"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="331.428" y="500.14">+getDt(): long</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="331.428" y="516.14">+setDt(dt:long): void</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="331.428" y="532.14">+getTemp(): temp</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="331.428" y="548.14">+setTemp(temp:Temp): void</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="331.428" y="564.14">+getWeather(): List&lt;Weather&gt;</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="331.428" y="580.14">+setWeather(weather:List&lt;Weather&gt;): void</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="277.3" y="634.227" width="202.5" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="277.3" y="634.227" width="202.5" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="378.55" y="654.227">Temp</text>
+    <rect style="fill: #ffffff" x="277.3" y="662.227" width="202.5" height="52"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="277.3" y="662.227" width="202.5" height="52"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="280.3" y="675.427">+day: double</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="280.3" y="691.427">+min: double</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="280.3" y="707.427">+max: double</text>
+    <rect style="fill: #ffffff" x="277.3" y="714.227" width="202.5" height="100"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="277.3" y="714.227" width="202.5" height="100"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="280.3" y="727.427">+getDay(): double</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="280.3" y="743.427">+setDay(day:double): void</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="280.3" y="759.427">+getMin(): double</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="280.3" y="775.427">+setMin(min:double): void</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="280.3" y="791.427">+getMax(): double</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="280.3" y="807.427">+setMax(max:double): void</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="536.173" y="628.913" width="325.7" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="536.173" y="628.913" width="325.7" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="699.023" y="648.913">Weather</text>
+    <rect style="fill: #ffffff" x="536.173" y="656.913" width="325.7" height="52"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="536.173" y="656.913" width="325.7" height="52"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="539.173" y="670.113">+main: String</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="539.173" y="686.113">+description: String</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="539.173" y="702.113">+icon: String</text>
+    <rect style="fill: #ffffff" x="536.173" y="708.913" width="325.7" height="100"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="536.173" y="708.913" width="325.7" height="100"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="539.173" y="722.113">+getMain(): String</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="539.173" y="738.113">+setMain(main:String): void</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="539.173" y="754.113">+getDescription(): String</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="539.173" y="770.113">+setDescription(description:String): void</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="539.173" y="786.113">+getIcon(): String</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="539.173" y="802.113">+setIcon(icon:String): void</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="700.433" y="410.977" width="217.9" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="700.433" y="410.977" width="217.9" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="809.383" y="430.977">City</text>
+    <rect style="fill: #ffffff" x="700.433" y="438.977" width="217.9" height="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="700.433" y="438.977" width="217.9" height="20"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="703.433" y="452.177">+name: String</text>
+    <rect style="fill: #ffffff" x="700.433" y="458.977" width="217.9" height="36"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="700.433" y="458.977" width="217.9" height="36"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="703.433" y="472.177">+getName(): String</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="703.433" y="488.177">+setName(name:String): void</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="695.479" y="-1665.56" width="618.3" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="695.479" y="-1665.56" width="618.3" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="1004.63" y="-1645.56">WeatherApp</text>
+    <rect style="fill: #ffffff" x="695.479" y="-1637.56" width="618.3" height="740"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="695.479" y="-1637.56" width="618.3" height="740"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="698.479" y="-1624.36">-unit: String = "metric"</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="698.479" y="-1608.36">-lang: String = "en"</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="698.479" y="-1592.36">-LOCATION_NOT_FOUND: Boolean = false</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="698.479" y="-1576.36">-current_history: Map&lt;String, CurrentWeatherData&gt; = new HashMap&lt;&gt;()</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="698.479" y="-1560.36">-hourly_history: Map&lt;String, HourlyWeatherData&gt; = new HashMap&lt;&gt;()</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="698.479" y="-1544.36">-daily_history: Map&lt;String, DailyWeatherData&gt; = new HashMap&lt;&gt;()</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="698.479" y="-1528.36">-imageCache: Map&lt;String, Image&gt; = new HashMap&lt;&gt;()</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="698.479" y="-1512.36">-placeholderImage: Image</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="698.479" y="-1496.36">-main_color: String = "#06cccc"</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="698.479" y="-1480.36">-favourites: List&lt;String&gt; = new ArrayList&lt;String&gt;()</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="698.479" y="-1464.36">-favouritesBox: ComboBox&lt;String&gt; = favouritesDropBox()</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="698.479" y="-1448.36">-api_key_Abu: String = "88a91051d6699b4cb230ff1ff2ebb3b1"</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="698.479" y="-1432.36">-bottomHBox: HBox = new HBox()</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="698.479" y="-1416.36">-dailyHbox: HBox = new HBox()</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="698.479" y="-1400.36">-middleScrollPane: ScrollPane = new ScrollPane()</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="698.479" y="-1384.36">-response: String</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="698.479" y="-1368.36">-locLabel: Label</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="698.479" y="-1352.36">-temperLabel: Label</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="698.479" y="-1336.36">-feelsLabel: Label</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="698.479" y="-1320.36">-windLabel: Label</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="698.479" y="-1304.36">-city_loc: String</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="698.479" y="-1288.36">-description: String</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="698.479" y="-1272.36">-temperature: String</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="698.479" y="-1256.36">-feelsLike: String</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="698.479" y="-1240.36">-windSpeed: String</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="698.479" y="-1224.36">-titleFont: Font</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="698.479" y="-1208.36">-locFont: Font</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="698.479" y="-1192.36">-descFont: Font</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="698.479" y="-1176.36">-def_font: Font</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="698.479" y="-1160.36">-city_locText: Text</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="698.479" y="-1144.36">+descriptionText: Text</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="698.479" y="-1128.36">-temperText: Text</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="698.479" y="-1112.36">-windText: Text</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="698.479" y="-1096.36">-weatherImage: ImageView</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="698.479" y="-1080.36">-favStar: ImageView</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="698.479" y="-1064.36">-CurrentWeatherImage: Image</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="698.479" y="-1048.36">-starImage: Image</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="698.479" y="-1032.36">-emptyStarImage: Image</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="698.479" y="-1016.36">-locField: TextField</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="698.479" y="-1000.36">-locButton: Button</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="698.479" y="-984.361">-favButton: Button</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="698.479" y="-968.361">-unitButton: Button</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="698.479" y="-952.361">-langBox: ComboBox&lt;String&gt;</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="698.479" y="-936.361">-isMapShown: boolean</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="698.479" y="-920.361">-isHistoryShown: boolean</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="698.479" y="-904.361">+</text>
+    <rect style="fill: #ffffff" x="695.479" y="-897.561" width="618.3" height="868"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="695.479" y="-897.561" width="618.3" height="868"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="698.479" y="-884.361">+start(stage:Stage): void</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="698.479" y="-868.361">+main(args:String[]): void</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="698.479" y="-852.361">-initImages(): void</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="698.479" y="-836.361">-getCenterVBox(): VBox</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="698.479" y="-820.361">-getFirstNavBar(): HBox</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="698.479" y="-804.361">-getTodayBox(): HBox</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="698.479" y="-788.361">-getSecondNavBar(): HBox</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="698.479" y="-772.361">-getMiddleScrollPane(): ScrollPane</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="698.479" y="-756.361">-createDayColumn(index:int,city:String,dailyWeatherData:DailyWeatherData): VBox</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="698.479" y="-740.361">-updateDailyColumns(): void</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="698.479" y="-724.361">-showForecastContent(): void</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="698.479" y="-708.361">-showMapContent(): void</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="698.479" y="-692.361">-getHTMLContent(String:city): String</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="698.479" y="-676.361">-showHistoryContent(): void</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="698.479" y="-660.361">-getBottomHBox(): HBox</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="698.479" y="-644.361">-getQuoteVBox(): VBox</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="698.479" y="-628.361">-splitStringIntoLines(input:String,maxCharacters:int): String</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="698.479" y="-612.361">-getBottomScrollPane(): ScrollPane</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="698.479" y="-596.361">-createHourColumn(index:int,city:String,</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="698.479" y="-580.361">                  hourlyWeatherData:HourlyWeatherData): VBox</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="698.479" y="-564.361">-updateHourlyColumns(): void</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="698.479" y="-548.361">+getWeatherData(city:String,api_key_Abu:String,</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="698.479" y="-532.361">                timespan:String): String</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="698.479" y="-516.361">-isFavourite(): boolean</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="698.479" y="-500.361">-toggleFavourite(): void</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="698.479" y="-484.361">-updateStarImage(imageUrl:String): void</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="698.479" y="-468.361">-updateLocLabel(): void</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="698.479" y="-452.361">-updateDescriptionLabel(): void</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="698.479" y="-436.361">-updateTemperText(): void</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="698.479" y="-420.361">-updateWeatherImage(): void</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="698.479" y="-404.361">-updateFeelsText(): void</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="698.479" y="-388.361">-updateWindSpeed(): void</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="698.479" y="-372.361">-getQuitButton(): Button</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="698.479" y="-356.361">-saveFavourites(): void</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="698.479" y="-340.361">-loadFavourites(): void</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="698.479" y="-324.361">+search(): void</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="698.479" y="-308.361">+getUnitToggleButton(): Button</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="698.479" y="-292.361">-langButton(): ComboBox&lt;String&gt;</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="698.479" y="-276.361">-favouritesDropBox(): ComboBox&lt;String&gt;</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="698.479" y="-260.361">-updateFavouritesComboBox(): void</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="698.479" y="-244.361">-updateFavBoxText(): void</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="698.479" y="-228.361">+getApiKey(): String</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="698.479" y="-212.361">+getLocation(): String</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="698.479" y="-196.361">+getUnit(): String</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="698.479" y="-180.361">+getLang(): String</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="698.479" y="-164.361">+getLangBox(): ComboBox&lt;String&gt;</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="698.479" y="-148.361">+getFavBox(): ComboBox&lt;String&gt;</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="698.479" y="-132.361">+getLocField(): TextField</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="698.479" y="-116.361">+getLocLabel(): Label</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="698.479" y="-100.361">+getTemperText(): Text</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="698.479" y="-84.3609">+getFeelsText(): Text</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="698.479" y="-68.3609">+getWindText(): Text</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="698.479" y="-52.3609">+getDescriptionText(): Text</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="698.479" y="-36.3609">+getWeatherImage(): ImageView</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="1642.11" y="84.0191" width="279.5" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="1642.11" y="84.0191" width="279.5" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="1781.86" y="104.019">Quotes</text>
+    <rect style="fill: #ffffff" x="1642.11" y="112.019" width="279.5" height="52"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="1642.11" y="112.019" width="279.5" height="52"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1645.11" y="125.219">-QUOTES_FILE: String = "quotes.txt"</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1645.11" y="141.219">-quotes: List&lt;String&gt;</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1645.11" y="157.219">-random: Random</text>
+    <rect style="fill: #ffffff" x="1642.11" y="164.019" width="279.5" height="52"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="1642.11" y="164.019" width="279.5" height="52"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1645.11" y="177.219">+Quotes()</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1645.11" y="193.219">-loadQuotes(): void</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1645.11" y="209.219">+getRandomQuote(): String</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="2069.31" y="292.66" width="348.8" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="2069.31" y="292.66" width="348.8" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="2243.71" y="312.66">SearchHistoryEntry</text>
+    <rect style="fill: #ffffff" x="2069.31" y="320.66" width="348.8" height="36"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="2069.31" y="320.66" width="348.8" height="36"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="2072.31" y="333.86">-timestamp: LocalDateTime</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="2072.31" y="349.86">-city_loc: String</text>
+    <rect style="fill: #ffffff" x="2069.31" y="356.66" width="348.8" height="100"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="2069.31" y="356.66" width="348.8" height="100"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="2072.31" y="369.86">+SearchHistoryEntry(timestamp:LocalDateTime,</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="2072.31" y="385.86">                    city_loc:String)</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="2072.31" y="401.86">+getTimestamp(): LocalDateTime</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="2072.31" y="417.86">+setTimestamp(timestamp:LocalDateTime): void</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="2072.31" y="433.86">+getCity_loc(): String</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="2072.31" y="449.86">+setCity_loc(city_loc:String): void</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="2062.77" y="83.1416" width="356.5" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="2062.77" y="83.1416" width="356.5" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="2241.02" y="103.142">SearchHistoryManager</text>
+    <rect style="fill: #ffffff" x="2062.77" y="111.142" width="356.5" height="36"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="2062.77" y="111.142" width="356.5" height="36"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="2065.77" y="124.342">+searchHistory: List&lt;SearchHistoryEntry&gt;</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="2065.77" y="140.342">+HISTORY_FILE: String = "history.json"</text>
+    <rect style="fill: #ffffff" x="2062.77" y="147.142" width="356.5" height="84"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="2062.77" y="147.142" width="356.5" height="84"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="2065.77" y="160.342">+SearchHistoryManager()</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="2065.77" y="176.342">+addToHistory(city_loc:String): void</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="2065.77" y="192.342">-saveSearchHistory(): void</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="2065.77" y="208.342">-loadSearchHistory(): void</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="2065.77" y="224.342">+getSearchHistory(): List&lt;SearchHistoryEntry&gt;</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="1971.42" y="531.182" width="541.3" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="1971.42" y="531.182" width="541.3" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="2242.07" y="551.182">LocalDateTimeAdapter</text>
+    <rect style="fill: #ffffff" x="1971.42" y="559.182" width="541.3" height="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="1971.42" y="559.182" width="541.3" height="20"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1974.42" y="572.382">+formatter: DateTimeFormatter = DateTimeFormatter.ISO_LOCAL_DATE_TIME</text>
+    <rect style="fill: #ffffff" x="1971.42" y="579.182" width="541.3" height="68"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="1971.42" y="579.182" width="541.3" height="68"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1974.42" y="592.382">+serialize(src:LocalDateTime,typeOfSrc:Type,</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1974.42" y="608.382">           context:JsonSerializationContext): JsonElement</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1974.42" y="624.382">+deserialize(json:JsonElement,typeOfT:Type,</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1974.42" y="640.382">             context:JsonDeserializationContext): LocalDateTime</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="-467.456" y="404.596" width="325.7" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-467.456" y="404.596" width="325.7" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="-304.606" y="424.596">Weather</text>
+    <rect style="fill: #ffffff" x="-467.456" y="432.596" width="325.7" height="68"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-467.456" y="432.596" width="325.7" height="68"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-464.456" y="445.796">+id: int</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-464.456" y="461.796">+main: String</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-464.456" y="477.796">+description: String</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-464.456" y="493.796">+icon: String</text>
+    <rect style="fill: #ffffff" x="-467.456" y="500.596" width="325.7" height="132"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-467.456" y="500.596" width="325.7" height="132"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-464.456" y="513.796">+getMain(): String</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-464.456" y="529.796">+setMain(main:String): void</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-464.456" y="545.796">+getDescription(): String</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-464.456" y="561.796">+setDescription(description:String): void</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-464.456" y="577.796">+getIcon(): String</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-464.456" y="593.796">+setIcon(icon:String): void</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-464.456" y="609.796">+getId(): int</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-464.456" y="625.796">+setId(id:int): void</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="-56.5311" y="406.595" width="294.9" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-56.5311" y="406.595" width="294.9" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="90.9189" y="426.595">Main</text>
+    <rect style="fill: #ffffff" x="-56.5311" y="434.595" width="294.9" height="36"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-56.5311" y="434.595" width="294.9" height="36"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-53.5311" y="447.795">+temp: double</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-53.5311" y="463.795">+feels_like: double</text>
+    <rect style="fill: #ffffff" x="-56.5311" y="470.595" width="294.9" height="68"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-56.5311" y="470.595" width="294.9" height="68"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-53.5311" y="483.795">+getTemp(): double</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-53.5311" y="499.795">+setTemp(temp:double): void</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-53.5311" y="515.795">+setFeelsTemp(feelsTemp:double): void</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-53.5311" y="531.795">+getFeelsTemp(): double</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="-75.6347" y="580.93" width="233.3" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-75.6347" y="580.93" width="233.3" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="41.0153" y="600.93">Wind</text>
+    <rect style="fill: #ffffff" x="-75.6347" y="608.93" width="233.3" height="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-75.6347" y="608.93" width="233.3" height="20"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-72.6347" y="622.13">+speed: double</text>
+    <rect style="fill: #ffffff" x="-75.6347" y="628.93" width="233.3" height="36"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-75.6347" y="628.93" width="233.3" height="36"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-72.6347" y="642.13">+getSpeed(): double</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-72.6347" y="658.13">+setSpeed(speed:double): void</text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-92.1471,385.287 -92.1471,389.851 90.9189,389.851 90.9189,405.587 "/>
+    <polygon style="fill: #ffffff" points="-92.1471,360.116 -87.3471,374.116 -92.1471,388.116 -96.9471,374.116 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-92.1471,360.116 -87.3471,374.116 -92.1471,388.116 -96.9471,374.116 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-92.1471,386.296 -92.1471,389.357 -304.606,389.357 -304.606,403.589 "/>
+    <polygon style="fill: #ffffff" points="-92.1471,361.124 -87.3471,375.124 -92.1471,389.124 -96.9471,375.124 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-92.1471,361.124 -87.3471,375.124 -92.1471,389.124 -96.9471,375.124 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-92.1471,385.287 -92.1471,395.116 -112.147,395.116 -112.147,618.93 -75.6347,618.93 "/>
+    <polygon style="fill: #ffffff" points="-92.1471,360.116 -87.3471,374.116 -92.1471,388.116 -96.9471,374.116 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-92.1471,360.116 -87.3471,374.116 -92.1471,388.116 -96.9471,374.116 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="695.655,384.916 695.655,391.858 809.383,391.858 809.383,409.971 "/>
+    <polygon style="fill: #ffffff" points="695.655,359.745 700.455,373.745 695.655,387.745 690.855,373.745 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="695.655,359.745 700.455,373.745 695.655,387.745 690.855,373.745 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="695.655,384.916 695.655,389.84 487.428,389.84 487.428,405.935 "/>
+    <polygon style="fill: #ffffff" points="695.655,359.745 700.455,373.745 695.655,387.745 690.855,373.745 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="695.655,359.745 700.455,373.745 695.655,387.745 690.855,373.745 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="482.379,613.127 482.379,618.091 378.55,618.091 378.55,634.227 "/>
+    <polygon style="fill: #ffffff" points="482.379,587.955 487.179,601.955 482.379,615.955 477.579,601.955 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="482.379,587.955 487.179,601.955 482.379,615.955 477.579,601.955 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="482.379,615.308 482.379,616.524 699.023,616.524 699.023,628.913 "/>
+    <polygon style="fill: #ffffff" points="482.379,590.136 487.179,604.136 482.379,618.136 477.579,604.136 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="482.379,590.136 487.179,604.136 482.379,618.136 477.579,604.136 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="1306.14,240.425 1306.14,310.39 1504.73,310.39 1504.73,391.527 "/>
+    <polygon style="fill: #ffffff" points="1306.14,215.254 1310.94,229.254 1306.14,243.254 1301.34,229.254 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="1306.14,215.254 1310.94,229.254 1306.14,243.254 1301.34,229.254 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="1131.33,640.312 1131.33,655.431 1056.57,655.431 1056.57,681.722 "/>
+    <polygon style="fill: #ffffff" points="1131.33,615.14 1136.13,629.14 1131.33,643.14 1126.53,629.14 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="1131.33,615.14 1136.13,629.14 1131.33,643.14 1126.53,629.14 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="1131.33,640.312 1131.33,656.676 1334.76,656.676 1334.76,684.211 "/>
+    <polygon style="fill: #ffffff" points="1131.33,615.14 1136.13,629.14 1131.33,643.14 1126.53,629.14 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="1131.33,615.14 1136.13,629.14 1131.33,643.14 1126.53,629.14 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="1131.33,640.312 1131.33,656.332 1601.28,656.332 1601.28,683.524 "/>
+    <polygon style="fill: #ffffff" points="1131.33,615.14 1136.13,629.14 1131.33,643.14 1126.53,629.14 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="1131.33,615.14 1136.13,629.14 1131.33,643.14 1126.53,629.14 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="2241.02,256.313 2241.02,268.398 2243.71,268.398 2243.71,291.655 "/>
+    <polygon style="fill: #ffffff" points="2241.02,231.142 2245.82,245.142 2241.02,259.142 2236.22,245.142 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="2241.02,231.142 2245.82,245.142 2241.02,259.142 2236.22,245.142 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="2243.71,481.831 2243.71,500.417 2242.07,500.417 2242.07,530.175 "/>
+    <polygon style="fill: #ffffff" points="2243.71,456.66 2248.51,470.66 2243.71,484.66 2238.91,470.66 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="2243.71,456.66 2248.51,470.66 2243.71,484.66 2238.91,470.66 "/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="1677.14" y="-1528.69" width="371.9" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="1677.14" y="-1528.69" width="371.9" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="1863.09" y="-1508.69">iAPI</text>
+    <rect style="fill: #ffffff" x="1677.14" y="-1500.69" width="371.9" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="1677.14" y="-1500.69" width="371.9" height="8"/>
+    <rect style="fill: #ffffff" x="1677.14" y="-1492.69" width="371.9" height="52"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="1677.14" y="-1492.69" width="371.9" height="52"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1680.14" y="-1479.49">+getWeatherData(city:String,api_key_Abu:String,</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1680.14" y="-1463.49">                timespan:String): String</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1680.14" y="-1447.49">+search(): void</text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 8; stroke: #000000" points="1658.9,-1482.69 1487.46,-1482.69 1487.46,-1483.56 1313.78,-1483.56 "/>
+    <polygon style="fill: #ffffff" points="1658.9,-1474.69 1674.9,-1482.69 1658.9,-1490.69 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="1658.9,-1474.69 1674.9,-1482.69 1658.9,-1490.69 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="1004.63,-4.38929 1004.63,34.0918 695.655,34.0918 695.655,83.7445 "/>
+    <polygon style="fill: #ffffff" points="1004.63,-29.5609 1009.43,-15.5609 1004.63,-1.56086 999.829,-15.5609 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="1004.63,-29.5609 1009.43,-15.5609 1004.63,-1.56086 999.829,-15.5609 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="1004.63,-4.38929 1004.63,34.2774 -92.1471,34.2774 -92.1471,84.1157 "/>
+    <polygon style="fill: #ffffff" points="1004.63,-29.5609 1009.43,-15.5609 1004.63,-1.56086 999.829,-15.5609 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="1004.63,-29.5609 1009.43,-15.5609 1004.63,-1.56086 999.829,-15.5609 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="1004.63,-4.38929 1004.63,33.8465 1306.14,33.8465 1306.14,83.2538 "/>
+    <polygon style="fill: #ffffff" points="1004.63,-29.5609 1009.43,-15.5609 1004.63,-1.56086 999.829,-15.5609 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="1004.63,-29.5609 1009.43,-15.5609 1004.63,-1.56086 999.829,-15.5609 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="1004.63,-4.38929 1004.63,34.2291 1781.86,34.2291 1781.86,84.0191 "/>
+    <polygon style="fill: #ffffff" points="1004.63,-29.5609 1009.43,-15.5609 1004.63,-1.56086 999.829,-15.5609 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="1004.63,-29.5609 1009.43,-15.5609 1004.63,-1.56086 999.829,-15.5609 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="1004.63,-4.38929 1004.63,33.7904 2241.02,33.7904 2241.02,83.1416 "/>
+    <polygon style="fill: #ffffff" points="1004.63,-29.5609 1009.43,-15.5609 1004.63,-1.56086 999.829,-15.5609 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="1004.63,-29.5609 1009.43,-15.5609 1004.63,-1.56086 999.829,-15.5609 "/>
+  </g>
+</svg>
