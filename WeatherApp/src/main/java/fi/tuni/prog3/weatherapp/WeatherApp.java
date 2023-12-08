@@ -77,7 +77,6 @@ public class WeatherApp extends Application {
 
     // Color profile of the program
     private String main_color = "#06cccc";
-    private String accent_color = "#dcfaf9";
 
     // Favourites are stored in these
     private List<String> favourites = new ArrayList<String>();
@@ -1070,7 +1069,7 @@ public class WeatherApp extends Application {
         }
     }
 
-    void updateTemperText() {
+    private void updateTemperText() {
         CurrentWeatherData todaysData = current_history.get(city_loc);
 
         if (todaysData != null) {
@@ -1341,7 +1340,7 @@ public class WeatherApp extends Application {
 
         langBox = new ComboBox<>();
         // Add options to the ComboBox
-        langBox.getItems().addAll("en", "fi", "fr", "tr", "az", "zh_cn", "vi", "de", "da", "sp", "ar");
+        langBox.getItems().addAll("en", "fi", "fr", "tr", "az", "vi", "de", "da", "sp", "ar");
         langBox.setValue("en");
 
         lang = langBox.getValue();
