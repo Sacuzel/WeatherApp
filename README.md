@@ -23,10 +23,10 @@ Features
         Multiple systems of units of measurement: Supports displaying weather data in SI and imperial units, fetched from OpenWeatherMap.
 
         Own features
-        
+
             Quotes: Displays random weather related quote at the bottom of the GUI. Required implementing the Quotes class and quotes.txt file.
             Default setting: Last used language and last used units are saved and loaded when user opens the program next time.
-            Multiple languages: The program can run in multiple languages, and locations can be searched for in multiple languages regardless of the currently used language.
+            Multiple languages: The program can display weather data and run in multiple languages, and locations can be searched for in multiple languages regardless of the currently used language.
             GIFs: The weather icons are GIFs instead of still images
             Star button: Custom button that can both favourite and un-favourite a location, and it changes color based on that.
             One click empty favourites: All favourites can be deleted at once instead of one at a time.
@@ -75,6 +75,7 @@ Division of labour in the team
         other minor fixes and adjustments.
         Manual testing and fixing bugs.
         README-file.
+        Program translation.
 
     Abdurrahman Faig:
         Uppermost buttons of the program.
@@ -89,6 +90,7 @@ Division of labour in the team
         README-file.
         Quit-button logic that handles saving data, connecting quit-button to X-button.
         Manual testing and fixing bugs.
+        Program translation.
 
     My Hoang:
         Second nav bar with 3 buttons: forecast, history, map.
