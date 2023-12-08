@@ -13,7 +13,16 @@ Features
     Internationalization: Support multiple languages for user interface elements. Ability to search for location in multiple languages regardless of the language selected.
     Units: Temperature and wind speed can be seen in either metric or imperial units.
     Memory: The program saves last searched location, last used units and last used language as defaults for next time the program is started.
-    Quotes: Own feature. Displays random weather related quote at the bottom of the GUI. Required implementing the Quotes class and quotes.txt file.
+
+    Own features
+        Quotes: Displays random weather related quote at the bottom of the GUI. Required implementing the Quotes class and quotes.txt file.
+        Default setting: Last used language and last used units are saved and loaded when user opens the program next time.
+        Multiple languages: The program can run in multiple languages, and locations can be searched for in multiple languages regardless of the currently used language
+        GIFs: The weather icons are GIFs instead of still images
+        Star button: Custom button that can both favourite and un-favourite a location, and it changes color based on that
+        One click empty favourites: All favourites can be deleted at once instead of one at a time
+
+
 
 
 Components
