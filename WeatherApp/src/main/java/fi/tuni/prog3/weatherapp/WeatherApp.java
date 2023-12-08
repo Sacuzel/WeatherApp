@@ -18,7 +18,6 @@ import javafx.scene.control.ScrollPane;
 import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import javafx.scene.layout.Background;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.Priority;
@@ -134,14 +133,6 @@ public class WeatherApp extends Application implements iAPI {
 
         // Adding HBox to the center of the BorderPane.
         root.setCenter(getCenterVBox());
-
-        // Adding button to the BorderPane and aligning it to the right.
-        /*
-         * var quitButton = getQuitButton();
-         * BorderPane.setMargin(quitButton, new Insets(10, 10, 0, 10));
-         * root.setBottom(quitButton);
-         * BorderPane.setAlignment(quitButton, Pos.TOP_RIGHT);
-         */
 
         Scene scene = new Scene(root, 700, 900);
         stage.setScene(scene);
