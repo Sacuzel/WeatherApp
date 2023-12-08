@@ -318,5 +318,141 @@
 {
   "timestamp": "2023-12-07T18:40:53.2386903",
   "city_loc": "Baku"
+},
+{
+  "timestamp": "2023-12-07T18:43:10.9602637",
+  "city_loc": "Hervanta"
+},
+{
+  "timestamp": "2023-12-07T18:44:19.8233184",
+  "city_loc": "Hervanta"
+},
+{
+  "timestamp": "2023-12-08T19:20:04.7598363",
+  "city_loc": "Hervanta"
+},
+{
+  "timestamp": "2023-12-08T19:23:30.0651067",
+  "city_loc": "Hervanta"
+},
+{
+  "timestamp": "2023-12-08T19:24:48.3650148",
+  "city_loc": "Hervanta"
+},
+{
+  "timestamp": "2023-12-08T19:24:58.5021613",
+  "city_loc": "Lapua"
+},
+{
+  "timestamp": "2023-12-08T19:25:22.8312886",
+  "city_loc": "Lapua"
+},
+{
+  "timestamp": "2023-12-08T19:25:45.3743922",
+  "city_loc": "Lapua"
+},
+{
+  "timestamp": "2023-12-08T19:25:58.0652833",
+  "city_loc": "Kanta-Hame"
+},
+{
+  "timestamp": "2023-12-08T19:26:57.9934048",
+  "city_loc": "Kanta-Hame"
+},
+{
+  "timestamp": "2023-12-08T19:27:05.2521549",
+  "city_loc": "Lappi"
+},
+{
+  "timestamp": "2023-12-08T19:27:09.0502424",
+  "city_loc": "Sweden"
+},
+{
+  "timestamp": "2023-12-08T19:27:16.7950203",
+  "city_loc": "Sweden"
+},
+{
+  "timestamp": "2023-12-08T19:27:32.2545098",
+  "city_loc": "Finland"
+},
+{
+  "timestamp": "2023-12-08T19:27:39.4422957",
+  "city_loc": "Germany"
+},
+{
+  "timestamp": "2023-12-08T19:27:55.2222003",
+  "city_loc": "Germany"
+},
+{
+  "timestamp": "2023-12-08T19:28:58.36803",
+  "city_loc": "Germany"
+},
+{
+  "timestamp": "2023-12-08T19:31:10.6028075",
+  "city_loc": "Germany"
+},
+{
+  "timestamp": "2023-12-08T19:35:41.9201164",
+  "city_loc": "Germany"
+},
+{
+  "timestamp": "2023-12-08T19:35:50.4018907",
+  "city_loc": "Helsinki"
+},
+{
+  "timestamp": "2023-12-08T19:36:05.6574268",
+  "city_loc": "Espoo"
+},
+{
+  "timestamp": "2023-12-08T19:37:10.983589",
+  "city_loc": "Espoo"
+},
+{
+  "timestamp": "2023-12-08T19:37:16.4354853",
+  "city_loc": "Kaleva"
+},
+{
+  "timestamp": "2023-12-08T19:37:20.0451223",
+  "city_loc": "Nakkila"
+},
+{
+  "timestamp": "2023-12-08T19:37:26.9305014",
+  "city_loc": "Nakkila"
+},
+{
+  "timestamp": "2023-12-08T19:37:28.6215574",
+  "city_loc": "Nakkila"
+},
+{
+  "timestamp": "2023-12-08T19:37:29.8701256",
+  "city_loc": "Nakkila"
+},
+{
+  "timestamp": "2023-12-08T19:37:55.5298522",
+  "city_loc": "Nakkila"
+},
+{
+  "timestamp": "2023-12-08T19:38:02.6407214",
+  "city_loc": "Jokela"
+},
+{
+  "timestamp": "2023-12-08T19:38:08.1578685",
+  "city_loc": "Jokela"
+},
+{
+  "timestamp": "2023-12-08T19:38:10.8843458",
+  "city_loc": "Jokela"
+},
+{
+  "timestamp": "2023-12-08T19:38:12.5887411",
+  "city_loc": "Jokela"
+},
+{
+  "timestamp": "2023-12-08T19:38:42.9557988",
+  "city_loc": "Jokela"
+},
+{
+  "timestamp": "2023-12-08T19:38:51.5881616",
+  "city_loc": "Zelenogorsk"
 }
 ]

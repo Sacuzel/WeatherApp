@@ -54,7 +54,7 @@ import java.util.Map;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
-public class WeatherApp extends Application {
+public class WeatherApp extends Application implements iAPI {
 
     private String unit = "metric";
     private String lang = "en";
@@ -980,12 +980,12 @@ public class WeatherApp extends Application {
                 current_history.put(todaysWeatherData.getName(), todaysWeatherData);
 
                 // Test print for current weather
-                String weatherTest = new String("Weather in " + todaysWeatherData.getName() + " "
+                /* String weatherTest = new String("Weather in " + todaysWeatherData.getName() + " "
                         + todaysWeatherData.getWeather().get(0).getDescription() + " "
                         + todaysWeatherData.getWeather().get(0).getMain() + " "
                         + " " + String.format("%.2f", todaysWeatherData.getMain().getTemp()));
 
-                System.out.println(weatherTest);
+                System.out.println(weatherTest); */
             }
             return response;
         }
@@ -1290,7 +1290,8 @@ public class WeatherApp extends Application {
         }
     }
 
-    public void search() {
+    @Override
+    public void search(){
         try {
             getWeatherData(city_loc, api_key_Abu, "current");
             updateLocLabel();
@@ -1486,6 +1487,12 @@ public class WeatherApp extends Application {
 
     public ImageView getWeatherImage() {
         return weatherImage;
+    }
+
+    @Override
+    public String getWeatherData() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'getWeatherData'");
     }
 
 }
