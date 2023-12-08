@@ -1459,11 +1459,4 @@ public class WeatherApp extends Application implements iAPI {
     public ImageView getWeatherImage() {
         return weatherImage;
     }
-
-    @Override
-    public String getWeatherData() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'getWeatherData'");
-    }
-
 }
