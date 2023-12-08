@@ -77,7 +77,6 @@ public class WeatherApp extends Application implements iAPI {
 
     // Color profile of the program
     private String main_color = "#06cccc";
-    private String accent_color = "#dcfaf9";
 
     // Favourites are stored in these
     private List<String> favourites = new ArrayList<String>();
@@ -903,6 +902,7 @@ public class WeatherApp extends Application implements iAPI {
 
     }
 
+    @Override
     public String getWeatherData(String city, String api_key_Abu, String timespan) throws IOException {
         String apiUrl;
         if (timespan.equals("hourly")) {
@@ -1070,7 +1070,7 @@ public class WeatherApp extends Application implements iAPI {
         }
     }
 
-    void updateTemperText() {
+    private void updateTemperText() {
         CurrentWeatherData todaysData = current_history.get(city_loc);
 
         if (todaysData != null) {
@@ -1342,7 +1342,7 @@ public class WeatherApp extends Application implements iAPI {
 
         langBox = new ComboBox<>();
         // Add options to the ComboBox
-        langBox.getItems().addAll("en", "fi", "fr", "tr", "az", "zh_cn", "vi", "de", "da", "sp", "ar");
+        langBox.getItems().addAll("en", "fi", "fr", "tr", "az", "vi", "de", "da", "sp", "ar");
         langBox.setValue("en");
 
         lang = langBox.getValue();
@@ -1388,35 +1388,6 @@ public class WeatherApp extends Application implements iAPI {
         }
         return favouritesBox;
     }
-    
-
-    /*
-     * private ComboBox<String> favouritesDropBox() {
-     * 
-     * // Initialize favouritesBox only if it's not already initialized
-     * if (favouritesBox == null) {
-     * favouritesBox = new ComboBox<>();
-     * }
-     * 
-     * // Add selected favourite to search box
-     * favouritesBox.setOnAction(event -> {
-     * String selectedFavourite = favouritesBox.getValue();
-     * if (selectedFavourite != null) {
-     * locField.setText(selectedFavourite);
-     * locButton.fire();
-     * }
-     * 
-     * });
-     * 
-     * if (favouritesBox.getItems().isEmpty()) {
-     * // Siphon favourites here
-     * favouritesBox.getItems().setAll(favourites);
-     * }
-     * 
-     * return favouritesBox;
-     * 
-     * }
-     */
 
     // This method updates the items in the ComboBox
     private void updateFavouritesComboBox() {

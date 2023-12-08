@@ -5,6 +5,8 @@ hello
  */
 package fi.tuni.prog3.weatherapp;
 
+import java.io.IOException;
+
 /**
  * Interface for extracting data from the OpenWeatherMap API.
  */
@@ -15,7 +17,7 @@ public interface iAPI {
      * @param loc Name of the location for which data should be fetched.
      * @return String.
      */
-    public String getWeatherData();
+    public String getWeatherData(String city, String api_key_Abu, String timespan) throws IOException ;
 
     /**
      * Performs a search for a location's weather data, and updates all the necessary variables with seperate methods.
