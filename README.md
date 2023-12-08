@@ -35,3 +35,6 @@ Dependencies
 Contributors with student numbers
 
     Abdurrahman Faig (H290733), Hans Ravna-Pieski (151247084), My Hoang (151395127)
+
+## UML diagram of the application
+![Alt text](prog3classdiagram.SVG)
