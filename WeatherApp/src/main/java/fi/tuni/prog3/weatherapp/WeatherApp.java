@@ -417,7 +417,7 @@ public class WeatherApp extends Application implements iAPI {
     }
 
     private ScrollPane getMiddleScrollPane() {
-        dailyHbox.setPrefHeight(300);
+        dailyHbox.setPrefHeight(235);
         dailyHbox.setStyle("-fx-background-color: white;");
         dailyHbox.setSpacing(10);
         dailyHbox.setPadding(new Insets(10, 5, 0, 5));
@@ -769,7 +769,7 @@ public class WeatherApp extends Application implements iAPI {
     }
 
     private ScrollPane getBottomScrollPane() {
-        bottomHBox.setPrefHeight(250);
+        bottomHBox.setPrefHeight(200);
         bottomHBox.setStyle("-fx-background-color: white;");
 
         bottomHBox.setSpacing(10);
