@@ -93,6 +93,7 @@ public class WeatherApp extends Application implements iAPI {
     private Label temperLabel;
     private Label feelsLabel;
     private Label windLabel;
+    private Label topBoxTitle;
     private String city_loc;
     private String description;
     private String temperature;
@@ -107,6 +108,7 @@ public class WeatherApp extends Application implements iAPI {
     private Text temperText;
     private Text feelsText;
     private Text windText;
+    private Text todaysWeather;
     private ImageView weatherImage;
     private ImageView favStar;
     private Image CurrentWeatherImage;
@@ -255,12 +257,13 @@ public class WeatherApp extends Application implements iAPI {
         locationBox.setPrefHeight(15);
 
         // Creating custom text font
-        titleFont = Font.font(def_font.getFamily(), FontWeight.BOLD, 30);
+        titleFont = Font.font(def_font.getFamily(), FontWeight.BOLD, 25);
 
         // Creating top label
-        Label topBoxTitle = new Label();
+        topBoxTitle = new Label();
         topBoxTitle.setPadding(new Insets(5, 5, 5, 5));
-        Text todaysWeather = new Text("Today's weather in ");
+
+        todaysWeather = new Text("Today's weather in");
         todaysWeather.setFont(titleFont);
         todaysWeather.setStroke(Color.BLACK);
         todaysWeather.setFill(Color.BLACK);
@@ -271,7 +274,7 @@ public class WeatherApp extends Application implements iAPI {
         topBoxTitle.setGraphic(todaysWeather);
 
         // City name and its graphics
-        locFont = Font.font(def_font.getFamily(), FontWeight.BOLD, 30);
+        locFont = titleFont;
 
         city_locText = new Text(city_loc);
         city_locText.setFont(locFont);
@@ -1303,6 +1306,68 @@ public class WeatherApp extends Application implements iAPI {
             SearchHistoryManager historyManager = new SearchHistoryManager();
             historyManager.addToHistory(city_loc);
 
+            if (lang != null) {
+                    switch (lang) {
+                        case "en":
+                            todaysWeather = new Text("Today's weather in");
+
+                            break;
+
+                        case "fi":
+                            todaysWeather = new Text("Sää paikassa");
+
+                            break;
+                        
+                        case "fr":
+                            todaysWeather = new Text("La météo aujourd'hui à");
+
+                            break;
+
+                        case "tr":
+                            todaysWeather = new Text("Bugünkü hava durumu");
+
+                            break;
+
+                        case "az":
+                            todaysWeather = new Text("Bugünkü hava");
+
+                            break;
+
+                        case "vi":
+                            todaysWeather = new Text("Thời tiết hôm nay ở");
+
+                            break;
+
+                        case "de":
+                            todaysWeather = new Text("Das heutige Wetter in");
+
+                            break;
+                        
+                        case "da":
+                            todaysWeather = new Text("Dagens vejr i");
+
+                            break;
+                        
+                        case "sp":
+                            todaysWeather = new Text("El tiempo de hoy en");
+
+                            break;
+
+                        case "ar":
+                            todaysWeather = new Text("الطقس اليوم في");
+
+                            break;
+                    }
+                    titleFont = Font.font(def_font.getFamily(), FontWeight.BOLD, 25);
+                    todaysWeather.setFont(titleFont);
+                    todaysWeather.setStroke(Color.BLACK);
+                    todaysWeather.setFill(Color.BLACK);
+                    todaysWeather.setStrokeWidth(0.5);
+                    topBoxTitle.setTextFill(Color.SKYBLUE);
+                    topBoxTitle.setMinWidth(169);
+                    topBoxTitle.setGraphic(todaysWeather);
+        }
+
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -1342,7 +1407,6 @@ public class WeatherApp extends Application implements iAPI {
             @Override
             public void handle(ActionEvent event) {
                 lang = langBox.getValue();
-
                 search();
 
             }
