@@ -2,7 +2,7 @@ package fi.tuni.prog3.weatherapp;
 
 import java.util.List;
 
-public class CurrentWeatherData{
+public class CurrentWeatherData {
     public Coord coord;
     public List<Weather> weather;
     public String base;

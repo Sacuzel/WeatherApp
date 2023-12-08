@@ -54,7 +54,7 @@ import java.util.Map;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
-public class WeatherApp extends Application {
+public class WeatherApp extends Application implements iAPI{
 
     private String unit = "metric";
     private String lang = "en";
@@ -902,6 +902,7 @@ public class WeatherApp extends Application {
 
     }
 
+    @Override
     public String getWeatherData(String city, String api_key_Abu, String timespan) throws IOException {
         String apiUrl;
         if (timespan.equals("hourly")) {
@@ -1289,6 +1290,7 @@ public class WeatherApp extends Application {
         }
     }
 
+    @Override
     public void search() {
         try {
             getWeatherData(city_loc, api_key_Abu, "current");
@@ -1386,35 +1388,6 @@ public class WeatherApp extends Application {
         }
         return favouritesBox;
     }
-    
-
-    /*
-     * private ComboBox<String> favouritesDropBox() {
-     * 
-     * // Initialize favouritesBox only if it's not already initialized
-     * if (favouritesBox == null) {
-     * favouritesBox = new ComboBox<>();
-     * }
-     * 
-     * // Add selected favourite to search box
-     * favouritesBox.setOnAction(event -> {
-     * String selectedFavourite = favouritesBox.getValue();
-     * if (selectedFavourite != null) {
-     * locField.setText(selectedFavourite);
-     * locButton.fire();
-     * }
-     * 
-     * });
-     * 
-     * if (favouritesBox.getItems().isEmpty()) {
-     * // Siphon favourites here
-     * favouritesBox.getItems().setAll(favourites);
-     * }
-     * 
-     * return favouritesBox;
-     * 
-     * }
-     */
 
     // This method updates the items in the ComboBox
     private void updateFavouritesComboBox() {
