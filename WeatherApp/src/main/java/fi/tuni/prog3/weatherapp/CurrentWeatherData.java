@@ -125,7 +125,15 @@ public class CurrentWeatherData{
         public void setSpeed(double speed) {
             this.speed = speed;
         }
+        
+        public int getDeg() {
+            return deg;
+        }
+
+        public void setDeg(int deg) {
+            this.deg = deg;
+        }
+
     }
     
 }
-
