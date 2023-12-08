@@ -73,3 +73,5 @@ Division of labour in the team
         Implement 3 features forecast, history, map changing according to location, unit and language.
         Manual testing and fixing bugs.
 
+## UML diagram of the application
+![Alt text](prog3classdiagram.SVG)
